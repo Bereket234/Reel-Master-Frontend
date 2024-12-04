@@ -3,7 +3,9 @@ import SectionWrapper from "../common/SectionWrapper";
 import Ad from "../common/Ad";
 import Image from "next/image";
 import Title from './Title';
-import { FaFish, FaTrophy, FaUpload,FaUserPlus } from 'react-icons/fa';
+import { FaCar, FaUserPlus } from "react-icons/fa";
+import { FaSackDollar } from "react-icons/fa6";
+import { PiSealPercentThin } from "react-icons/pi";
 import StepCard from './StepCard';
 
 interface StepProps {
@@ -14,25 +16,25 @@ interface StepProps {
 
 const steps: StepProps[] = [
     {
-        icon: <FaUserPlus size="50%" />,
+        icon: <PiSealPercentThin size="50%" color="white"/>,
         title: "Become a member",
         description:
             "by visiting the Compete Now page. Complete the sign-up process to officially join the tournament and gain access to all competition features.",
     },
     {
-        icon: <FaFish size="50%" />,
+        icon: <FaCar size="50%" />,
         title: "Get your code",
         description:
             "from the Tournament Codes page. This unique code must be included in your submission to verify your participation for the month.",
     },
     {
-        icon: <FaUpload size="50%" />,
+        icon: <PiSealPercentThin size="50%" />,
         title: "Catch and measure",
         description:
             "your target species (see Leaderboards). Take two photos: one with your code on a brag mat and one holding your catch.",
     },
     {
-        icon: <FaTrophy size="50%" />,
+        icon: <FaSackDollar size="50%" />,
         title: "Submit Catch",
         description:
             "through the Submit Catch page. Make sure the images meet the submission guidelines to be considered in the competition.",
@@ -45,12 +47,12 @@ function Section4() {
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
-                className="border border-ad-bg rounded-custom "
+                className="rounded-custom "
             />
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
-                className="border border-ad-bg rounded-custom"
+                className="rounded-custom"
             />
         </div>
     );
@@ -60,12 +62,12 @@ function Section4() {
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
-                className="border border-ad-bg rounded-custom"
+                className="rounded-custom"
             />
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
-                className="border border-ad-bg rounded-custom"
+                className="rounded-custom"
             />
         </div>
     );
@@ -73,7 +75,7 @@ function Section4() {
 
     return (
         <div className="bg-secondary-blue/10">
-            <Title title="How To" className="mb-16 mt-16 pt-2" />
+            <Title title="How To" className="mb-16 mt-16 pt-12" />
 
             <SectionWrapper leftAd={leftAd} rightAd={rightAd} className="">
                 <div className="max-w-4xl mx-auto">

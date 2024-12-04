@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "./components/nav-bar/NavBar";
+import Footer from "./components/Footer";
 import Providers from "./provider";
 import { Inter, Roboto, Paytone_One, Ribeye } from "next/font/google";
 
@@ -61,6 +62,7 @@ export default function RootLayout({
                 <Providers>
                     <NavBar />
                     {children}
+                    <Footer />
                 </Providers>
             </body>
         </html>
