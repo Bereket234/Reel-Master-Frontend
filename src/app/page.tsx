@@ -1,9 +1,18 @@
+"use client";
 import Image from "next/image";
+import NavBar from "./components/nav-bar/NavBar";
+import Section1 from "./components/home/Section1";
+import Section2 from "./components/home/Section2";
+import Section3 from "./components/home/Section3";
+import Section4 from "./components/home/Section4";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      hey
-    </div>
-  );
+    return (
+        <>
+            <Section1 />
+            <Section2 />
+            <Section3 />
+            <Section4 />
+        </>
+    );
 }
