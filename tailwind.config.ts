@@ -24,6 +24,8 @@ export default {
                 "dark-gray": "#D4DBDE",
                 "ad-bg": "#D9D9D9",
                 "earth-primary": "#FFCFAB",
+                "secondary-bg": "#F6F6F6",
+                "light-bg": "#E3EDF7",
             },
             fontFamily: {
                 inter: ["var(--font-inter)"],
