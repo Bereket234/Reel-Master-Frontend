@@ -5,6 +5,8 @@ import {
     FaCalendarAlt,
     FaMapMarkerAlt,
 } from "react-icons/fa";
+import { LiaAwardSolid } from "react-icons/lia";
+import { GiCirclingFish } from "react-icons/gi";
 
 interface CardProps {
     icon: React.ReactNode;
@@ -27,9 +29,9 @@ function Card({ icon, text, className }: CardProps) {
 
 function SecondSection() {
     const cards = [
-        { icon: <FaFish size={32} />, text: "$1000 Prize" },
+        { icon: <LiaAwardSolid size={32} />, text: "$1000 Prize" },
         { icon: <FaTrophy size={32} />, text: "Anywhere Anytime" },
-        { icon: <FaCalendarAlt size={32} />, text: "20+ fish species" },
+        { icon: <GiCirclingFish size={32} />, text: "20+ fish species" },
         { icon: <FaMapMarkerAlt size={32} />, text: "$20000+ awarded" },
     ];
 

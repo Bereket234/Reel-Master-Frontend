@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import SectionWrapper from "../common/SectionWrapper";
 import Ad from "../common/Ad";
 import Image from "next/image";
-import Title from './Title';
+import Title from "./Title";
 import { FaCar, FaUserPlus } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
 import { PiSealPercentThin } from "react-icons/pi";
-import StepCard from './StepCard';
+import StepCard from "./StepCard";
+import AdPage from "../common/AdPage";
 
 interface StepProps {
     icon: React.ReactNode;
@@ -16,7 +17,7 @@ interface StepProps {
 
 const steps: StepProps[] = [
     {
-        icon: <PiSealPercentThin size="50%" color="white"/>,
+        icon: <PiSealPercentThin size="50%" color="white" />,
         title: "Become a member",
         description:
             "by visiting the Compete Now page. Complete the sign-up process to officially join the tournament and gain access to all competition features.",
@@ -44,34 +45,15 @@ const steps: StepProps[] = [
 function Section4() {
     const leftAd = (
         <div className="flex flex-row md:flex-col gap-y-4">
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="rounded-custom "
-            />
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="rounded-custom"
-            />
+            <AdPage number={2} border={false} />
         </div>
     );
 
     const rightAd = (
         <div className="flex flex-row md:flex-col gap-y-4">
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="rounded-custom"
-            />
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="rounded-custom"
-            />
+            <AdPage number={2} border={false} />
         </div>
     );
-
 
     return (
         <div className="bg-secondary-blue/10">

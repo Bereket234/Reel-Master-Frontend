@@ -3,35 +3,18 @@ import SectionWrapper from "../common/SectionWrapper";
 import Ad from "../common/Ad";
 import Image from "next/image";
 import Title from './Title';
+import AdPage from '../common/AdPage';
 
 function Section3() {
     const leftAd = (
         <div className='flex flex-row md:flex-col gap-y-4'>
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="border border-ad-bg rounded-custom "
-            />
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="border border-ad-bg rounded-custom"
-            />
+            <AdPage number={2} border={true} />
         </div>
     );
 
     const rightAd = (
         <div className="flex flex-row md:flex-col gap-y-4">
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="border border-ad-bg rounded-custom"
-            />
-            <Ad
-                imageUrl="/fish.png"
-                text="Sponsor"
-                className="border border-ad-bg rounded-custom"
-            />
+            <AdPage number={2} border={true} />
         </div>
     );
 

@@ -8,6 +8,7 @@ export default {
     ],
     theme: {
         extend: {
+            mode: 'jit',
             borderRadius: {
                 custom: "10px",
             },

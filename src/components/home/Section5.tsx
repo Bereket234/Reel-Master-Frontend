@@ -3,6 +3,7 @@ import SectionWrapper from "../common/SectionWrapper";
 import Ad from "../common/Ad";
 import Image from "next/image";
 import Title from "./Title";
+import AdPage from "../common/AdPage";
 
 interface CardProps {
     image: string;
@@ -49,25 +50,13 @@ function Card({ image, title, description, index }: CardProps) {
 function Section5() {
     const leftAd = (
         <div className="flex flex-col gap-4">
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
+            <AdPage number={7} border={true} />
         </div>
     );
 
     const rightAd = (
         <div className="flex flex-col gap-4">
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
-            <Ad imageUrl="/fish.png" text="Sponsor" className="border border-ad-bg rounded-custom" />
+            <AdPage number={7} border={true} />
         </div>
     );
 

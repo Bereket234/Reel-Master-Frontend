@@ -57,7 +57,6 @@ function HowTo() {
 
     const leftAd = (
         <div className="flex flex-col gap-4">
-            
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
@@ -88,7 +87,6 @@ function HowTo() {
 
     const rightAd = (
         <div className="flex flex-col gap-4">
-           
             <Ad
                 imageUrl="/fish.png"
                 text="Sponsor"
@@ -121,7 +119,7 @@ function HowTo() {
         <div className="py-16 px-4">
             <Title title="How to Compete" className="mb-20 mt-16 pt-12" />
             <SectionWrapper leftAd={leftAd} rightAd={rightAd}>
-                <div className="grid grid-cols-1 gap-16 max-w-4xl mx-auto pt-8 px-16">
+                <div className="grid grid-cols-1 gap-16 max-w-4xl mx-auto pt-8 px-1">
                     {steps.map((step) => (
                         <StepCard
                             key={step.number}
